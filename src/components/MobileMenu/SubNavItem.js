@@ -20,10 +20,10 @@ const SubNavItem = ({ subItem = {} }) => {
           {subItems?.length && (
             <button
               onClick={handleExpand}
-              aria-label="dropdown toggler"
+              aria-label='dropdown toggler'
               className={expand ? "expanded" : ""}
             >
-              <i className="fa fa-angle-down"></i>
+              <i className='fa fa-angle-down'></i>
             </button>
           )}
         </a>

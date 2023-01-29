@@ -23,22 +23,24 @@ const NavItem = ({ item = {} }) => {
           {name}
           <button
             onClick={handleExpand}
-            aria-label="dropdown toggler"
+            aria-label='dropdown toggler'
             className={expand ? "expanded" : ""}
           >
-            <i className="fa fa-angle-down"></i>
+            <i className='fa fa-angle-down'></i>
           </button>
         </a>
       </Link>
-      <ul
-        style={{
-          display: expand ? "block" : "none",
-        }}
-      >
-        {subNavItems.map((subItem) => (
-          <SubNavItem subItem={subItem} key={subItem.id} />
-        ))}
-      </ul>
+      {subNavItems && (
+        <ul
+          style={{
+            display: expand ? "block" : "none",
+          }}
+        >
+          {subNavItems.map((subItem) => (
+            <SubNavItem subItem={subItem} key={subItem.id} />
+          ))}
+        </ul>
+      )}
     </li>
   );
 };
