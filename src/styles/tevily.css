@@ -21,8 +21,9 @@
   --thm-font: "DM Sans", sans-serif;
   --thm-reey-font: "reeyregular";
   --thm-gray: #787780;
+  --thm-light-gray: #758498;
   --thm-gray-rgb: 120, 119, 128;
-  --thm-primary: #e8604c;
+  --thm-primary: #294465;
   --thm-primary-rgb: 232, 96, 76;
   --thm-black: #313041;
   --thm-black-rgb: 49, 48, 65;
@@ -2548,6 +2549,13 @@ ul {
 /*--------------------------------------------------------------
 # Testimonial One
 --------------------------------------------------------------*/
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .testimonial-one {
   position: relative;
   display: block;
@@ -2623,6 +2631,7 @@ ul {
   box-shadow: 0px 10px 60px 0px rgb(0, 0, 0, 0.07);
   padding: 50px 50px 43px;
   text-align: center;
+  min-height: 370px;
   border-radius: var(--thm-border-radius);
 }
 
@@ -2659,7 +2668,7 @@ ul {
   margin: 0;
   line-height: 40px;
   padding-top: 18px;
-  padding-bottom: 18px;
+  /* padding-bottom: 18px; */
 }
 
 .testimonial-one__client-name {
@@ -3279,7 +3288,7 @@ ul {
 .site-footer {
   position: relative;
   display: block;
-  background-color: var(--thm-black);
+  background-color: var(--thm-light-gray);
 }
 
 .site-footer__top {
@@ -6916,7 +6925,7 @@ ul {
   border-bottom: 1px solid #ebe6de;
   padding-bottom: 25px;
   margin-bottom: 26px;
-  padding-left: 80px;
+  /* padding-left: 80px; */
 }
 
 .tour-details-two__last-minute-list li:last-child {

@@ -3,12 +3,13 @@ import dynamic from "next/dynamic";
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import SingleTestimonial from "./SingleTestimonial";
+import { tripAdvisorTestimonials } from "../../../public/testimonials.json";
 
 const TinySlider = dynamic(() => import("tiny-slider-react"), { ssr: false });
 
 const settings = {
   lazyload: true,
-  nav: true,
+  nav: false,
   navPosition: "bottom",
   mouseDrag: true,
   items: 1,
@@ -18,6 +19,7 @@ const settings = {
   gutter: 0,
   autoplayButton: false,
   autoplayButtonOutput: false,
+  autoplayTimeout: 10000,
   responsive: {
     768: {
       items: 2,
@@ -64,9 +66,9 @@ const TestimonialOne = ({ aboutPage = false }) => {
           <Col xl={12}>
             <div className='testimonial-one__carousel'>
               <TinySlider settings={settings}>
-                {testimonials.map((testimonial) => (
+                {tripAdvisorTestimonials.map((testimonial) => (
                   <SingleTestimonial
-                    key={testimonial.id}
+                    key={testimonial.timestamp}
                     testimonial={testimonial}
                   />
                 ))}

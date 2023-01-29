@@ -3,37 +3,31 @@ import { Col, Image, Row } from "react-bootstrap";
 
 const SingleComment = ({ comment = {} }) => {
   const {
-    image,
-    name,
-    date,
-    title,
-    message,
-    services,
-    locations,
-    amenities,
-    prices,
-    food,
+    profile_image,
+    date_of_stay,
+    review_heading,
+    review_body,
+    company_response,
   } = comment;
 
+  let name = company_response.split(" ")[1].split(",")[0];
+
   return (
-    <div className="tour-details__review-comment-single">
-      <div className="tour-details__review-comment-top">
-        <div className="tour-details__review-comment-top-img">
-          <Image
-            src={require(`@/images/resources/${image}`).default.src}
-            alt=""
-          />
+    <div className='tour-details__review-comment-single'>
+      <div className='tour-details__review-comment-top'>
+        <div className='tour-details__review-comment-top-img'>
+          <Image src={profile_image} alt='' />
         </div>
-        <div className="tour-details__review-comment-top-content">
+        <div className='tour-details__review-comment-top-content'>
           <h3>{name}</h3>
-          <p>{date}</p>
+          <p>{date_of_stay}</p>
         </div>
       </div>
-      <div className="tour-details__review-comment-content">
-        <h3>{title}</h3>
-        <p>{message}</p>
+      <div className='tour-details__review-comment-content'>
+        <h3>{review_heading}</h3>
+        <p>{review_body}</p>
       </div>
-      <div className="tour-details__review-form-stars">
+      {/* <div className="tour-details__review-form-stars">
         <Row>
           <Col md={4}>
             <p>
@@ -87,7 +81,7 @@ const SingleComment = ({ comment = {} }) => {
             </p>
           </Col>
         </Row>
-      </div>
+      </div> */}
     </div>
   );
 };

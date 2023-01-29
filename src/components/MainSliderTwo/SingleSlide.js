@@ -8,20 +8,20 @@ const SingleSlide = ({ slide = {} }) => {
   return (
     <SwiperSlide>
       <div
-        className="image-layer"
+        className='image-layer'
         style={{
           backgroundImage: `url(${bg.src})`,
         }}
       ></div>
       <Container>
-        <div className="swiper-slide-inner">
-          <div className="tour-details-slider_icon">
-            <a href="#">
+        <div className='swiper-slide-inner'>
+          <div className='tour-details-slider_icon'>
+            {/* <a href="#">
               <i className="fab fa-youtube"></i>
             </a>
             <a href="#">
               <i className="fa fa-heart"></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </Container>
