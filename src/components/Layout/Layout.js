@@ -22,11 +22,11 @@ const Layout = ({ children, pageTitle }) => {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{pageTitle} || Tevily || Tevily NextJS Template For Tour</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <title>Adventure in Bosnia</title>
       </Head>
       <Preloader loading={loading} />
-      <main style={{ opacity: loading ? 0 : 1 }} className="page-wrapper">
+      <main style={{ opacity: loading ? 0 : 1 }} className='page-wrapper'>
         <Header pageTitle={pageTitle} />
         {children}
         <SiteFooter />

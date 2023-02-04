@@ -13,9 +13,7 @@ const { overview, overviewList, faq, comments } = tourDetailsLeft;
 
 const TourDetailsLeft = () => {
   const [active, setActive] = useState(1);
-  const accordionRef = useRef(null);
-
-  const slideInView = () => console.log(accordionRef.current);
+  const accordionRef = useRef();
 
   const mostarComments = tripAdvisorTestimonials.filter(
     (comment) =>
@@ -64,7 +62,7 @@ const TourDetailsLeft = () => {
       </div>
       <div className='tour-details-two__tour-plan'>
         <h3 className='tour-details-two__title'>Tour Plan</h3>
-        <div className='accrodion-grp faq-one-accrodion'>
+        <div className='accrodion-grp faq-one-accrodion' ref={accordionRef}>
           {faq.map(({ id, title, text, lists }) => (
             <div
               className={`accrodion overflow-hidden${
@@ -74,10 +72,12 @@ const TourDetailsLeft = () => {
             >
               <div
                 onClick={() => {
-                  setActive(id), slideInView();
+                  setActive(id),
+                    accordionRef.current.scrollIntoView({
+                      behaviour: "smooth",
+                    });
                 }}
                 className='accrodion-title'
-                ref={accordionRef}
               >
                 <h4>
                   <span>Day {id}</span> {title}

@@ -1,5 +1,9 @@
+import luggage from "../assets/images/resources/Luggage-storage-in-Sarajevo-scaled.jpeg";
+import transfer from "../assets/images/resources/Sarajevo-airport-transfer-1.jpeg";
+
 export const tourDetailsOne = {
-  title: "Mostar",
+  title:
+    "Mostar, Blagaj Dervish House, Počitelj & Konjic - Day Tour from Sarajevo",
   rate: 69,
   duration: "10-12 hrs",
   ppl: "8",
@@ -132,14 +136,14 @@ export const tourDetailsLeft = {
 export const tourDetailsSidebar = [
   {
     id: 1,
-    image: "Sarajevo-airport-transfer-1.jpeg",
+    image: transfer,
     // price: "380",
     title: "Need Airport Transfer?",
     location: "Book Now",
   },
   {
     id: 2,
-    image: "Luggage-storage-in-Sarajevo-scaled.jpeg",
+    image: luggage,
     // price: "380",
     title: "Need Luggage Storage",
     location: "Book Now",

@@ -34,6 +34,10 @@
   --thm-letter-spacing: -0.02em;
 }
 
+.last-minute-book {
+  color: var(--thm-black);
+}
+
 .row {
   --bs-gutter-x: 30px;
 }
@@ -6730,6 +6734,19 @@ ul {
 }
 
 .tour-details-two__sidebar-form-input input[type="text"] {
+  height: 67px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 30px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--thm-gray);
+  border-radius: var(--thm-border-radius);
+  background-color: var(--thm-base);
+}
+
+.tour-details-two__sidebar-form-input input[type="email"] {
   height: 67px;
   width: 100%;
   border: none;
