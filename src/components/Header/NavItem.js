@@ -21,7 +21,29 @@ const NavItem = ({ navItem = {} }) => {
             key={subItem.id}
           >
             <Link href={subItem.href}>
-              <a href={href}>{subItem.name}</a>
+              <a
+                href={href}
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                {subItem.name}
+                {subItem.new ? (
+                  <div
+                    style={{
+                      marginLeft: "15px",
+                      backgroundColor: "#C11a0c",
+                      borderRadius: "20%",
+                      color: "white",
+                      padding: "5px",
+                    }}
+                  >
+                    NEW
+                  </div>
+                ) : null}
+              </a>
             </Link>
             <ul>
               {subItem.subItems?.map((item) => (

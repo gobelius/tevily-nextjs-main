@@ -1,10 +1,18 @@
-import logo from "@/images/resources/footer-logo.png";
+import logo from "@/images/logo.png";
 
 const social = [
-  { icon: "fa-twitter", link: "" },
-  { icon: "fa-facebook-square", link: "" },
-  { icon: "fa-pinterest-p", link: "" },
-  { icon: "fa-instagram", link: "" },
+  {
+    icon: "fa-facebook-square",
+    link: "https://www.facebook.com/AdventureInBosnia",
+  },
+  {
+    icon: "fa-instagram",
+    link: "https://www.instagram.com/adventureinbosnia/",
+  },
+  {
+    icon: "fa-tripadvisor",
+    link: "https://www.tripadvisor.com/Attraction_Review-g294450-d17640175-Reviews-or100-Adventure_in_Bosnia_Tours-Sarajevo_Sarajevo_Canton_Federation_of_Bosnia_an.html",
+  },
 ];
 
 const footerData = {
@@ -18,19 +26,19 @@ const footerData = {
     {
       id: 1,
       icon: "fas fa-phone-square-alt",
-      content: "+ 92 666 999 0000",
+      content: "+387 62 521 792",
       subHref: "tel",
     },
     {
       id: 2,
       icon: "fas fa-envelope",
-      content: "needhelp@company.com",
+      content: "info@adventureinbosnia.ba",
       subHref: "mailto",
     },
     {
       id: 3,
       icon: "fas fa-map-marker-alt",
-      content: "666 road, broklyn street new york",
+      content: "Kovači 25, Sarajevo 71000",
     },
   ],
   companies: [

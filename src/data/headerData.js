@@ -1,5 +1,5 @@
-import logo from "@/images/resources/logo-1.png";
-import logo2 from "@/images/resources/logo-2.png";
+import logo from "@/images/logo.png";
+import logo2 from "@/images/logo.png";
 
 const navItems = [
   {
@@ -32,23 +32,27 @@ const navItems = [
     //   },
     // ],
   },
-  {
-    id: 2,
-    name: "Destinations",
-    href: "/destinations",
-    subNavItems: [
-      { id: 1, name: "Destinations", href: "/destinations" },
-      { id: 2, name: "Destinations Detail", href: "/destinations-details" },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   name: "Destinations",
+  //   href: "/destinations",
+  //   subNavItems: [
+  //     { id: 1, name: "Destinations", href: "/destinations" },
+  //     { id: 2, name: "Destinations Detail", href: "/destinations-details" },
+  //   ],
+  // },
   {
     id: 3,
     name: "Tours",
     href: "/tours-list",
     subNavItems: [
-      { id: 1, name: "Tours", href: "/tours" },
-      { id: 2, name: "Tours List", href: "/tours-list" },
-      { id: 3, name: "Tours Details", href: "/tour-details" },
+      {
+        id: 1,
+        name: "Mostar, Blagaj Dervish House, Počitelj & Konjic - Day Tour from Sarajevo",
+        href: "/tours-list",
+      },
+      { id: 2, name: "Jajce", href: "/tours-list" },
+      { id: 3, name: "InstaSarajevo", href: "/tour-details", new: true },
     ],
   },
   {
@@ -75,10 +79,18 @@ const navItems = [
 ];
 
 const social = [
-  { icon: "fa-facebook-square", link: "" },
-  { icon: "fa-twitter", link: "" },
-  { icon: "fa-instagram", link: "" },
-  { icon: "fa-pinterest-p", link: "" },
+  {
+    icon: "fa-facebook-square",
+    link: "https://www.facebook.com/AdventureInBosnia",
+  },
+  {
+    icon: "fa-instagram",
+    link: "https://www.instagram.com/adventureinbosnia/",
+  },
+  {
+    icon: "fa-tripadvisor",
+    link: "https://www.tripadvisor.com/Attraction_Review-g294450-d17640175-Reviews-or100-Adventure_in_Bosnia_Tours-Sarajevo_Sarajevo_Canton_Federation_of_Bosnia_an.html",
+  },
 ];
 
 const headerData = {
@@ -86,13 +98,13 @@ const headerData = {
     {
       id: 1,
       icon: "icon-phone-call",
-      content: "+ 92 666 999 0000",
+      content: "+387 62 521 792",
       subHref: "tel",
     },
     {
       id: 2,
       icon: "icon-at",
-      content: "needhelp@company.com",
+      content: "info@adventureinbosnia.ba",
       subHref: "mailto",
     },
   ],

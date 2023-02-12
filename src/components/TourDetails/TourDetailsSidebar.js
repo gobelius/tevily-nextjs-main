@@ -4,6 +4,7 @@ import { Image } from "react-bootstrap";
 import DatePicker from "react-datepicker";
 import Select from "react-select";
 import { tourDetailsOne } from "@/data/tourDetailsPage";
+import Alert from "react-bootstrap/Alert";
 
 const typeOptions = ["Adventure", "Wildlife", "Sightseeing"].map((it) => ({
   value: it,
@@ -65,6 +66,7 @@ const customStyle = {
 
 const TourDetailsSidebar = () => {
   const [startDate, setStartDate] = useState(new Date());
+  const [show, setShow] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -75,6 +77,7 @@ const TourDetailsSidebar = () => {
       date: startDate,
       whereTo: title,
     };
+
     const res = await fetch("/api/reservation", {
       body: JSON.stringify({
         personalizations: [
@@ -110,12 +113,25 @@ const TourDetailsSidebar = () => {
       console.log(error);
       return;
     } else {
-      window.alert("Poslo");
+      setShow(true);
     }
   };
 
   return (
-    <div className='tour-details-two__sidebar'>
+    <div className='tour-details-two__sidebar position-relative'>
+      {show && (
+        <Alert variant='success' onClose={() => setShow(false)} dismissible>
+          <Alert.Heading>Booking successfull</Alert.Heading>
+          <p>
+            You have successfully booked your trip to .... An email has been
+            sent to you with your booking confirmation.
+          </p>
+          <hr />
+          <p className='mb-0'>
+            If you have not recieved an email, please check your spam folder.
+          </p>
+        </Alert>
+      )}
       <div className='tour-details-two__book-tours'>
         <h3 className='tour-details-two__sidebar-title'>Book {title}</h3>
         <form
@@ -191,6 +207,12 @@ const TourDetailsSidebar = () => {
             <div
               key={id}
               className='tour-details-two__last-minute'
+              onClick={() =>
+                window.open(
+                  `mailto:kenan@adventureinbosnia.ba?subject=${title}`,
+                  "_blank"
+                )
+              }
               style={{
                 backgroundImage: `linear-gradient(
                   rgba(255, 255, 255, 0.45), 

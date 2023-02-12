@@ -1,3 +1,5 @@
+import blagaj from "@/images/mostar/blagaj.jpg";
+
 const toursListPage = {
   categories: [
     "City Tours",
@@ -16,14 +18,15 @@ const toursListPage = {
   toursList: [
     {
       id: 1,
-      image: "tours-list-img-1.jpg",
-      superb: "8.0",
-      title: "Moscow Red City Land",
-      rate: 870,
+      image: blagaj.src,
+      superb: "5.0",
+      title:
+        "Mostar, Blagaj Dervish House, Počitelj & Konjic - Day Tour from Sarajevo",
+      rate: 69,
       text: "Lorem ipsum available isn but the majority have suffered alteratin in some or form injected semper fames.",
-      date: "3 Days",
+      date: "1 Day",
       user: "12+",
-      map: "Los Angeles",
+      map: "Sarajevo",
     },
     {
       id: 2,

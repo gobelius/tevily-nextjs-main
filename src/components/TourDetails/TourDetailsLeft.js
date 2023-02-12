@@ -8,6 +8,7 @@ import ReviewForm from "./ReviewForm";
 import ReviewScoreBar from "./ReviewScoreBar";
 import SingleComment from "./SingleComment";
 import { tripAdvisorTestimonials } from "../../../public/testimonials.json";
+import GalerijaZaDetails from "../GalleryOne/GalerijaZaDetails";
 
 const { overview, overviewList, faq, comments } = tourDetailsLeft;
 
@@ -103,6 +104,8 @@ const TourDetailsLeft = () => {
       </div>
       <div className='tour-details-two__location'>
         {/* <h3 className='tour-details-two__title'>Mapa</h3> */}
+
+        <GalerijaZaDetails />
       </div>
 
       <h3 className='tour-details-two__title review-scores__title'>Reviews</h3>
