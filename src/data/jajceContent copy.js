@@ -2,7 +2,7 @@ import luggage from "../assets/images/resources/Luggage-storage-in-Sarajevo-scal
 import transfer from "../assets/images/resources/Sarajevo-airport-transfer-1.jpeg";
 
 export const jajceDetails = {
-  title: "Jajce",
+  title: "testis 1234",
   rate: 69,
   duration: "10-12 hrs",
   ppl: "8",
