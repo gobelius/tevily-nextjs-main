@@ -15,7 +15,7 @@ export const jajceDetails = {
 export const tourDetailsLeft = {
   superb: "7.0",
   overview:
-    "Lorem ipsum available isn but the majority have suffered alteratin in some or form injected simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit amet finibus eros.",
+    "Promijenili smo nesto da testiramo.... alteratin in some or form injected simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit amet finibus eros.",
   overviewList: [
     "Pick and Drop Services",
     "1 Meal Per Day",
