@@ -34,7 +34,6 @@ const ContactPage = () => {
     } else {
       window.alert("Poslo");
     }
-    console.log(fullname, email, message);
 
     // const fromData = new FormData(e.target);
     // const data = {};

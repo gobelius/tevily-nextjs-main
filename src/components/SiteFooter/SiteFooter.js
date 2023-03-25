@@ -7,11 +7,9 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 const { logo, icons, companies, explore, social, year, author, about } =
   footerData;
 const { navItems } = headerData;
-console.log(navItems);
+
 const tours = navItems[1].subNavItems;
 const transfers = navItems[2].subNavItems;
-
-console.log(tours);
 
 const SiteFooter = () => {
   const handleSubmit = (e) => {

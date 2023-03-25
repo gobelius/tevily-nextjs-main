@@ -7,8 +7,6 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 
 const { bg, galleryData } = galleryOne;
 
-console.log(galleryData);
-
 const GalerijaZaDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);

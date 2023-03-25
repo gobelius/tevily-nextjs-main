@@ -4,7 +4,6 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function sendEmail(req, res) {
   try {
-    console.log("REQ.BODY", req.body);
     await sendgrid.send({
       personalizations: req.body.personalizations, // Your email where you'll receive emails
       from: "info@adventureinbosnia.ba", // your website email address here
@@ -12,7 +11,6 @@ async function sendEmail(req, res) {
       html: `<p>You have successuly booked ${req.body.whereTo}, for date: ${req.body.date}. Number of persons: ${req.body.people} </p>`,
     });
   } catch (error) {
-    // console.log(error);
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
 
