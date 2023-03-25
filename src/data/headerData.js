@@ -46,10 +46,11 @@ const navItems = [
     name: "Tours",
     href: "/tours-list",
     subNavItems: [
+      //ovdje dodajes nove tourse
       {
         id: 1,
-        name: "Mostar, Blagaj Dervish House, Počitelj & Konjic - Day Tour from Sarajevo",
-        href: "/tours-list",
+        name: "Mostar & Herzegovina Tour",
+        href: "/tour-details",
       },
       { id: 2, name: "Jajce", href: "/jajce" },
       { id: 3, name: "InstaSarajevo", href: "/tour-details", new: true },
@@ -57,9 +58,24 @@ const navItems = [
   },
   {
     id: 4,
-    name: "Pages",
-    href: "",
-    subNavItems: [{ id: 1, name: "About", href: "/about" }],
+    name: "Transfers",
+    href: "/tours-list",
+    subNavItems: [
+      //ovdje dodajes nove transfere
+      {
+        id: 1,
+        name: "Mostar & Herzegovina Tour",
+        href: "/tour-details",
+      },
+      { id: 2, name: "Jajce", href: "/jajce" },
+      { id: 3, name: "InstaSarajevo", href: "/tour-details", new: true },
+    ],
+  },
+  {
+    id: 5,
+    name: "About",
+    href: "/about",
+    // subNavItems: [{ id: 1, name: "About", href: "/about" }],
   },
   // {
   //   id: 5,

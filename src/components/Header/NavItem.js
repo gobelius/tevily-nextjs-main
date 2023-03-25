@@ -37,7 +37,7 @@ const NavItem = ({ navItem = {} }) => {
                       backgroundColor: "#C11a0c",
                       borderRadius: "20%",
                       color: "white",
-                      padding: "5px",
+                      padding: "5px 10px",
                     }}
                   >
                     NEW

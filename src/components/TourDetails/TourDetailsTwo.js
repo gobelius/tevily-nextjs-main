@@ -6,16 +6,12 @@ import TourDetailsSidebar from "./TourDetailsSidebar";
 const TourDetailsTwo = () => {
   return (
     <section className='tour-details-two'>
-      <Container>
+      <Container className='h-100'>
         <Row style={{ alignItems: "baseline" }} className='h-100'>
-          <Col
-            xl={8}
-            lg={7}
-            style={{ position: "sticky", top: "2rem", alignSelf: "flex-start" }}
-          >
+          <Col xl={8} lg={7}>
             <TourDetailsLeft />
           </Col>
-          <Col xl={4} lg={5}>
+          <Col xl={4} lg={5} style={{ position: "sticky", top: "0" }}>
             <TourDetailsSidebar />
           </Col>
         </Row>

@@ -1,10 +1,17 @@
 import footerData from "@/data/footerData";
+import headerData from "@/data/headerData";
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 const { logo, icons, companies, explore, social, year, author, about } =
   footerData;
+const { navItems } = headerData;
+console.log(navItems);
+const tours = navItems[1].subNavItems;
+const transfers = navItems[2].subNavItems;
+
+console.log(tours);
 
 const SiteFooter = () => {
   const handleSubmit = (e) => {
@@ -67,18 +74,42 @@ const SiteFooter = () => {
               </Col>
               <Col xl={2} lg={12} md={12} className='animated fadeInUp'>
                 <div className='footer-widget__column footer-widget__explore'>
-                  <h3 className='footer-widget__title'>Explore</h3>
+                  <h3 className='footer-widget__title'>Tours</h3>
                   <ul className='list-unstyled footer-widget__explore-list'>
-                    {explore.map(({ id, title, link }) => (
+                    {tours.map(({ id, name, href }) => (
                       <li key={id}>
-                        <a href={link}>{title}</a>
+                        <a href={href}>{name}</a>
                       </li>
                     ))}
                   </ul>
                 </div>
               </Col>
-              <Col xl={4} lg={6} md={6} className='animated fadeInUp'>
-                {/* <div className='footer-widget__column footer-widget__newsletter'>
+              <Col xl={2} lg={12} md={12} className='animated fadeInUp'>
+                <div className='footer-widget__column footer-widget__explore'>
+                  <h3 className='footer-widget__title'>Transfers</h3>
+                  <ul className='list-unstyled footer-widget__explore-list'>
+                    {transfers.map(({ id, name, href }) => (
+                      <li key={id}>
+                        <a href={href}>{name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </Col>
+              <Col xl={2} lg={12} md={12} className='animated fadeInUp'>
+                <div className='footer-widget__column footer-widget__explore'>
+                  <h3 className='footer-widget__title'>Last Minute</h3>
+                  <ul className='list-unstyled footer-widget__explore-list'>
+                    <li>
+                      <a href='mailto:info@adventureinbosnia.ba'>
+                        Luggage Storage
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </Col>
+              {/* <Col xl={4} lg={6} md={6} className='animated fadeInUp'> */}
+              {/* <div className='footer-widget__column footer-widget__newsletter'>
                   <h3 className='footer-widget__title'>Newsletter</h3>
                   <form
                     className='footer-widget__newsletter-form mc-form'
@@ -109,7 +140,7 @@ const SiteFooter = () => {
                     </div>
                   </div>
                 </div> */}
-              </Col>
+              {/* </Col> */}
             </Row>
           </div>
         </Container>

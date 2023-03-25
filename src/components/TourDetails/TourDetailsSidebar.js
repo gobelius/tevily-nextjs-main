@@ -91,7 +91,7 @@ const TourDetailsSidebar = () => {
           {
             to: [
               {
-                email: "kenan@adventureinbosnia.ba",
+                email: "info@adventureinbosnia.ba",
               },
             ],
           },
@@ -118,7 +118,7 @@ const TourDetailsSidebar = () => {
   };
 
   return (
-    <div className='tour-details-two__sidebar position-relative'>
+    <div className='tour-details-two__sidebar'>
       {show && (
         <Alert variant='success' onClose={() => setShow(false)} dismissible>
           <Alert.Heading>Booking successfull</Alert.Heading>
@@ -209,7 +209,7 @@ const TourDetailsSidebar = () => {
               className='tour-details-two__last-minute'
               onClick={() =>
                 window.open(
-                  `mailto:kenan@adventureinbosnia.ba?subject=${title}`,
+                  `mailto:info@adventureinbosnia.ba?subject=${title}`,
                   "_blank"
                 )
               }

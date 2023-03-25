@@ -17,7 +17,7 @@ const Home = () => {
     <Layout pageTitle='Home One'>
       <MainSlider />
       {/* <TourSearch /> */}
-      <DestinationsOne />
+      {/* <DestinationsOne /> */}
       <AboutOne />
       <PopularTours />
       <VideoOne />

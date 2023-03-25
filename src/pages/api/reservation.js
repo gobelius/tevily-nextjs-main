@@ -7,7 +7,7 @@ async function sendEmail(req, res) {
     console.log("REQ.BODY", req.body);
     await sendgrid.send({
       personalizations: req.body.personalizations, // Your email where you'll receive emails
-      from: "kenan@adventureinbosnia.ba", // your website email address here
+      from: "info@adventureinbosnia.ba", // your website email address here
       subject: "Reservation Confirmation",
       html: `<p>You have successuly booked ${req.body.whereTo}, for date: ${req.body.date}. Number of persons: ${req.body.people} </p>`,
     });

@@ -43,12 +43,12 @@ const footerData = {
   ],
   companies: [
     { id: 1, link: "/about", title: "About Us" },
-    { id: 2, link: "#", title: "Community Blog" },
-    { id: 3, link: "#", title: "Rewards" },
-    { id: 4, link: "#", title: "Work with Us" },
-    { id: 5, link: "#", title: "Meet the Team" },
+    { id: 2, link: "/contact", title: "Contact" },
+    // { id: 3, link: "#", title: "Community Blog" },
+    // { id: 4, link: "#", title: "Work with Us" },
+    // { id: 5, link: "#", title: "Meet the Team" },
   ],
-  explore: [
+  last: [
     { id: 1, link: "#", title: "Account" },
     { id: 2, link: "#", title: "Legal" },
     { id: 3, link: "#", title: "Contact" },
